@@ -5,7 +5,8 @@ require_once 'Caneta.php';
 
 // criando(instanciando) novo objeto a partir da classe
 $canetaVermelha = new Caneta;
-// definindo caracteristicas
+
+// definindo caracteristicas | quando atributos publicos 
 $canetaVermelha->modelo = "bic";
 $canetaVermelha->cor = "azul";
 $canetaVermelha->ponta = "0.5";
@@ -13,7 +14,6 @@ $canetaVermelha->tampada = true;
 
 // chamando metodos
 $canetaVermelha->rabiscar();
-
 $canetaVermelha->destampar();
 // $canetaVermelha->tampar();
 

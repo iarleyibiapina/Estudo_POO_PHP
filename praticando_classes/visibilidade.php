@@ -21,12 +21,3 @@ echo ("<br>");
 $a1->alterar();
 print_r($a1);
 echo ("<br>");
-
-        // METODOS ACESSORES (envia informaçoes a usuarios) getters
-        // e = nova Estante
-        // t = e.getTotDoc()
-        
-        // METODOS MODIFICADORES (usuarios envia informaçoes) setters
-        //e = nova Estante
-        //e.setTotDoc(doc)
-        // no php: $variavel->setExemplo("um");

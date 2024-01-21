@@ -1,0 +1,17 @@
+METODOS ACESSORES (envia informaçoes a usuarios) getters
+e = nova Estante
+t = e.getTotDoc()
+
+METODOS MODIFICADORES (usuarios envia informaçoes) setters
+e = nova Estante
+e.setTotDoc(doc)
+
+METODO CONSTRUTOR 
+toda vez que um objeto é instanciado pode ser definido um construtor onde vai iniciar um objeto com dados ja definidos dentro do construtor
+pode ser criado pelo nome da propria classe ou __construct
+tambem pode ser passado parametros para ja criar uma classe com tais informações
+
+public function __construct( $valor ) {
+    $this->nome = "Cada New Class eu vou ser definido automaticamente";
+    $this->valor = $valor;
+}

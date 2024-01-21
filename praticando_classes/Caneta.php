@@ -29,3 +29,4 @@ class Caneta
     }
 }
     // ESTADO
+// Pode ser chamado no index para ver o estado de cada caneta
