@@ -6,3 +6,5 @@ qlqer parter do codigo pode ter alteração - privado
 alterção apenas na classe atual
 nao pode ser atribuido fora da classe # protegido
 alteração apenas na classe atual e herança
+
+- Com interface a interação com objeto é definida apenas por meio dela, metodos setters e getters são inacessiveis
