@@ -1,5 +1,6 @@
 <?php
 require_once('./Lutador.php');
+require_once('./Luta.php');
 $lutadores = array();
 
 $lutadores[0] = new Lutador(
@@ -46,21 +47,22 @@ $lutadores[3] = new Lutador(
     5
 );
 ?>
-
-<pre>
+<!-- <pre>
     <?php
     var_dump($lutadores);
     ?>
-</pre>
+</pre> -->
+
 
 <?php
-
 echo "Apresentando lutadores: ";
 foreach ($lutadores as $lutador) {
     echo $lutador->apresentar();
 }
+?>
 
-
+<hr>
+<?php
 echo "<br> Lutador " . $lutadores[1]->getNome() . "<br>";
 $lutadores[1]->status();
 
@@ -69,3 +71,21 @@ $lutadores[1]->ganharLuta();
 
 echo "<br> Novo status após luta <br>";
 $lutadores[1]->status();
+echo "<br>";
+?>
+<hr>
+<?php
+$Luta = new Luta;
+
+// var_dump($lutadores[1]->getNome());
+$Luta->marcarLuta($lutadores[1], $lutadores[2]);
+// $Luta->marcarLuta($lutadores[1], $lutadores[1]);
+$Luta->lutar();
+?>
+
+<hr>
+<!-- <pre>
+    <?=
+    print_r($Luta);
+    ?>
+</pre> -->
