@@ -17,6 +17,7 @@ class Luta
     // instanciando a classe e com ela seus metodos
     public function setDesafiado(Lutador $desafiado)
     {
+        // utilizando metodos da classe Lutador
         $this->desafiado = $desafiado->getNome();
     }
     public function getDesafiante()
@@ -26,6 +27,7 @@ class Luta
     // instanciando a classe e com ela seus metodos
     public function setDesafiante(Lutador $desafiante)
     {
+        // utilizando metodos da classe Lutador
         $this->$desafiante = $desafiante->getNome();
     }
     public function getRounds()
@@ -58,8 +60,8 @@ class Luta
             $this->desafiante = $lutadorDois;
         } else {
             $this->aprovada = false;
-            $this->desafiado = null;
-            $this->desafiante = null;
+            // $this->desafiado = null;
+            // $this->desafiante = null;
         }
     }
     public function lutar()
