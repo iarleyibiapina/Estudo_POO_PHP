@@ -4,8 +4,14 @@ require_once('./Pessoas.php');
 require_once('./Aluno.php');
 require_once('./Professor.php');
 require_once('./Funcionario.php');
+require_once('./Visitante.php');
+require_once('./Bolsista.php');
+require_once('./Tecnico.php');
 
-$p1 = new Pessoas();
+
+// Agora com classe ABSTRATA = não é possivel instanciar esta classe diretamente
+// $p1 = new Pessoas();
+// --
 $p2 = new Aluno();
 $p3 = new Professor();
 $p4 = new Funcionario();
