@@ -1,0 +1,18 @@
+Polimorfismo é a forma de uma palavra ter 'varios' significados ou varias formas de se fazer/definir um objeto
+ele é bem definido em classes com mesmas assinaturas porem com aç~~oes diferentes form
+
+ assinatura de uma classe é a forma como ela foi definida, 
+ assinaturas iguais são definidas pela quantidade e tipo de parametros
+
+public function media(n1: real, n2: real): real
+
+public function media(u1: real, u2: real): inteiro
+
+essas duas funçoes possuem as mesmas assinaturas, pois alem do nome, possuem quantidadade
+e tipo iguais
+
+asssinaturas diferentes:
+
+public function media(n1: real, n2: real, bim: inteiro): real
+public function media(n1: real, n2: real, n3: real, n4: real): real
+public function media(n1: real, n2: real, bim: inteiro, faltas: inteiro): caractere
