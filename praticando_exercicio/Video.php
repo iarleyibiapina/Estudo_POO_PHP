@@ -10,6 +10,15 @@ class Video implements VideoInterface
     private $curtidas;
     private $reproduzindo;
 
+    public function __construct($titulo)
+    {
+        $this->titulo = $titulo;
+        $this->avaliacao = 0;
+        $this->views = 0;
+        $this->curtidas = 0;
+        $this->reproduzindo = false;
+    }
+
     // getters
     public function getTitulo()
     {
@@ -21,7 +30,7 @@ class Video implements VideoInterface
         return $this->avaliacao;
     }
 
-    public function getViews()
+    public  function getViews()
     {
         return $this->views;
     }
@@ -42,7 +51,8 @@ class Video implements VideoInterface
     }
     public function setAvaliacao($avaliacao)
     {
-        $this->avaliacao = $avaliacao;
+        $media = ($this->avaliacao + $avaliacao) / $this->views;
+        $this->avaliacao = $media;
     }
     public function setViews($views)
     {
