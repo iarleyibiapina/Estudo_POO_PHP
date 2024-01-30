@@ -1,0 +1,15 @@
+{
+  "name": "7iarl/praticando_exemplo_conexao_sql",
+  "autoload": {
+    "psr-4": {
+      "7iarl\\PraticandoExemploConexaoSql\\": "src/"
+    }
+  },
+  "authors": [
+    {
+      "name": "iarley",
+      "email": "7iarley7@gmail.com"
+    }
+  ],
+  "require": {}
+}

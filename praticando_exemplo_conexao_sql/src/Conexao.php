@@ -1,5 +1,11 @@
 <?php
 
+
+namespace praticando_exemplo_conexao_sql;
+
+require('../vendor/autoload.php');
+
+
 abstract class Conexao
 {
     private $localhost;

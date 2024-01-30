@@ -1,8 +1,8 @@
 <?php
 
-spl_autoload_register(function ($class_name) {
-    include $class_name . '.php';
-});
+require './vendor/autoload.php';
+
+// use praticando_exemplo_conexao_sql\ExemploModel;
 
 $p = new ExemploModel();
 

@@ -1,7 +1,16 @@
 <?php
 
+use Conexao;
+
 require_once('./Conexao.php');
 require_once('./CrudInterface.php');
+// namespace praticando_exemplo_conexao_sql;
+
+require('../vendor/autoload.php');
+
+// use ErrorException;
+// use praticando_exemplo_conexao_sql\Conexao;
+// use praticando_exemplo_conexao_sql\CrudInterface;
 
 class ExemploModel extends Conexao implements CrudInterface
 {
