@@ -1,10 +1,8 @@
 <?php
 
 // require_once('./ExemploModel.php');
-namespace praticando_exemplo_conexao_sql;
-
-require('../vendor/autoload.php');
-
+// require('../vendor/autoload.php');
+namespace src;
 
 interface CrudInterface
 {

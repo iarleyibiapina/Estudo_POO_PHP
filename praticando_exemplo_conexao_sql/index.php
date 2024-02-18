@@ -2,7 +2,9 @@
 
 require './vendor/autoload.php';
 
-// use praticando_exemplo_conexao_sql\ExemploModel;
+use src\ExemploModel;
+use src\test\MaisUm;
+use src\test\Name;
 
 $p = new ExemploModel();
 
@@ -12,3 +14,8 @@ $p->create([
     'coluna3' => 'outro valor',
     // 'coluna4' => 'outro valor',
 ]);
+
+
+$test = new Name;
+$oul = new MaisUm("vibora");
+echo ($oul->name);

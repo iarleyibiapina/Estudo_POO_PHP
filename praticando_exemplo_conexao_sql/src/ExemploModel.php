@@ -1,12 +1,15 @@
 <?php
 
-use Conexao;
+namespace src;
 
-require_once('./Conexao.php');
-require_once('./CrudInterface.php');
-// namespace praticando_exemplo_conexao_sql;
+use src\Conexao;
+use ErrorException;
 
-require('../vendor/autoload.php');
+// require_once('./Conexao.php');
+// require_once('./CrudInterface.php');
+
+
+// require('../vendor/autoload.php');
 
 // use ErrorException;
 // use praticando_exemplo_conexao_sql\Conexao;

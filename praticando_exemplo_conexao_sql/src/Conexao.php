@@ -1,10 +1,8 @@
 <?php
 
+// require('../vendor/autoload.php');
 
-namespace praticando_exemplo_conexao_sql;
-
-require('../vendor/autoload.php');
-
+namespace src;
 
 abstract class Conexao
 {
