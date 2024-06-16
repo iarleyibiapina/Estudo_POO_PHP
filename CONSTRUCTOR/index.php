@@ -3,9 +3,6 @@
 // CONSTRUCT
 require_once 'construct.php';
 
-// $var = new inicio;
-// print_r($var);
-
 // ja passando os parametros para o constructor
-$varDois = new inicio("Um", "Dois", "Tres");
+$varDois = new Construct("Um");
 print_r($varDois);
