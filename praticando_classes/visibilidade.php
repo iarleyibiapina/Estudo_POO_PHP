@@ -8,6 +8,10 @@ $a1->cor = "Prata";
 // aqui,o atributo é privado ou protegido e se tentar modificar o IDE nao identifica, mas o servidor volta como ERRO.
 // $a1->eletrica = "ativado";
 
+// Public    - acessado em qualquer lugar
+// Protected - acessa apenas propria classe e subclasses
+// Private   - acessado apenas dentro da classe
+
 echo ("<br>");
 print_r($a1);
 echo ("<br>");
