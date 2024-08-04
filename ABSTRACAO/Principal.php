@@ -1,5 +1,6 @@
 <?php
 
+// classe abstrata
 abstract class Principal
 {
     // uma classe abstrata é uma "base" para outras classes
@@ -17,7 +18,22 @@ abstract class Principal
         return 1;
     }
 
+    // a partir de um momento que uma classe possui um metodo abstrato
+    // a classe inteira precisa ser abstrata
     // classes filhas devem implementar este metodo
     // abstrato
-    public abstract function metodoAbstrato(): int;
+    public abstract function metodoAbstrato(): int; // nao possui corpo
+
+    /**
+     * Possuo um certo metodo que pode mudar dependendo da classe que herda
+     * @return int
+     */
+    protected function regraNegocio(int $number): int
+    {
+        return pow($number, $this->setExp() ?? 2); 
+    }
+
+    // preciso definir o retorno 
+    abstract protected function setExp(): int; // este metodo é abstrato, pois definirei o expoente
+    // na classe que herda.
 }
